@@ -1,6 +1,6 @@
 # Email Classification
 
-Email Classification is a machine learning project aimed at classifying emails into categories such as spam or ham (not spam). I use various text-processing techniques and classifiers to achieve this.
+Email Classification is a machine learning project aimed at classifying emails into categories such as spam or ham (not spam). we use various text-processing techniques and classifiers to achieve this.
 
 ## Features
 
