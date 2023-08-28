@@ -31,7 +31,7 @@ pip install pandas scikit-learn
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/[YourUsername]/email-classification.git
+git clone https://github.com/Damilola-Yinusa/email-classification.git
 ```
 
 2. Navigate to the project directory and run the script:
