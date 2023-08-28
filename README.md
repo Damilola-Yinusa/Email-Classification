@@ -1,49 +1,54 @@
-Email Classification
+# Email Classification
 
-Overview
+Email Classification is a machine learning project aimed at classifying emails into categories such as spam or ham (not spam). We use various text-processing techniques and classifiers to achieve this.
 
-This project aims to classify emails into different categories, such as spam or not-spam, using machine learning techniques. The primary goal is to accurately identify spam emails to improve email filtering systems.
+## Features
 
-Technologies Used
-Python 3
-scikit-learn
-pandas
-re (regular expressions)
+1. **Data Cleaning**: Removing special characters and converting text to lowercase for uniformity.
+2. **Feature Engineering**: Use of the `TfidfVectorizer` to convert the raw email text into a numerical feature vector.
+3. **Classifier**: Used `RandomForestClassifier` with hyperparameter tuning.
+4. **Evaluation Metrics**: Provides accuracy, precision, recall, F1-score, and a confusion matrix for model evaluation.
 
-Features
-Data Cleaning: Removing special characters and converting text to lowercase.
-Text Vectorization: Converting text to numerical data using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization.
-Model: Using Random Forest Classifier with hyperparameter tuning via GridSearchCV.
-Evaluation: Metrics used for evaluating the model include Accuracy, Precision, Recall, and F1-score.
+## Getting Started
 
-How to Set Up and Run the Project
-Prerequisites
-Python 3.x
-pip (Python package installer)
-Installation Steps
+### Prerequisites
 
-Clone the GitHub repository:
-bash
-Copy code
-git clone https://github.com/Damilola-Yinusa/email-classification.git
-Navigate to the project folder and install the required packages:
+The following Python libraries are required:
 
-bash
-Copy code
+- pandas
+- scikit-learn
+- re
+- os
+
+You can install these using pip:
+
+```bash
+pip install pandas scikit-learn
+```
+
+### Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/[YourUsername]/email-classification.git
+```
+
+2. Navigate to the project directory and run the script:
+
+```bash
 cd email-classification
-pip install -r requirements.txt
-Running the Project
-After installation, you can run the project using:
+python email_classifier.py
+```
 
-Copy code
-python email_classification.py
-This will train the model on the dataset and output evaluation metrics like Accuracy, Precision, Recall, and F1-Score.
+### Dataset
 
-Dataset
-The dataset spam_ham_dataset.csv should be placed in the project root directory. The dataset should contain two columns:
+The model is trained on a dataset named `spam_ham_dataset.csv` which should be placed in the root directory.
 
-Autor
-Damilola Yinusa
+## Contributions
 
-License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
+Feel free to fork the project, make a pull request, or suggest any other enhancements.
+
+## License
+
+This project is licensed under the MIT License.
